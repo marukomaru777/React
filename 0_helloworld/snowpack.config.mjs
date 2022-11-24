@@ -4,7 +4,8 @@ export default {
     /* ... */
     // directory name: 'build directory'
     public: '/',
-    src: '/dist',
+    src: '/src',
+    dist: '/dist',
   },
   plugins: [
     /* ... */
