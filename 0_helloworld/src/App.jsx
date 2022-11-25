@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <header className="App-header">
         <p>
           Page has been open for <code>{count}</code> seconds.
-          <img src={logo} className="App-logo" alt="logo" />
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
         </p>
       </header>
     </div>
