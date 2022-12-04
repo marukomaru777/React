@@ -44,12 +44,7 @@ function App() {
   // } = tableInstance
 
   return (
-    <BTable striped bordered hover size="sm" {...getTableProps()}  
-            style={{ 
-              width: '20%',
-              marginTop: '30px',
-              marginLeft: '20px'
-            }}>
+    <BTable striped bordered hover size="sm" {...getTableProps()}>
       {/* <thead>
         {headerGroups.map((headerGroup) => (
           <tr {...headerGroup.getHeaderGroupProps()}>

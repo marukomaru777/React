@@ -14,6 +14,9 @@ https://react-table-v7.tanstack.com/docs/examples/basic
 
 react-bootstrap
 
+# Chart
+1. npm install --save echarts echarts-for-react
+https://kalacloud.com/blog/react-echarts-tutorial/ 
 
 [21:11:25] [snowpack] react/jsx-runtime: Unscannable package import found.
 Snowpack scans source files for package imports at startup, and on every change.
@@ -38,3 +41,4 @@ python3 Controller --app hello run
 
 
 https://blog.csdn.net/huayunhualuo/article/details/100080092
+https://pypi.org/project/Flask-ReactJS/ 
