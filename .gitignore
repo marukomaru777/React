@@ -23,6 +23,7 @@ scripts/flow/*/.flowconfig
 build/
 remote-repo/
 coverage/
+venv/
 
 fixtures/dom/public/react-dom.js
 fixtures/dom/public/react.js

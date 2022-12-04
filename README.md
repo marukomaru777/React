@@ -32,8 +32,8 @@ https://docs.python.org/3/library/venv.html#venv-def
 
 # Flask 架設虛擬環境
 https://dev.to/codemee/python-xu-ni-huan-jing-venv-nbg 
-1. python3 -m venv testenv
-2. source testenv/bin/activate
+1. python3 -m venv venv
+2. source venv/bin/activate
 3. pip install numpy==1.23.4
 4. deactivate (離開虛擬環境，再把資料夾刪除即可)
 
