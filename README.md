@@ -35,3 +35,6 @@ https://dev.to/codemee/python-xu-ni-huan-jing-venv-nbg
 4. deactivate (離開虛擬環境，再把資料夾刪除即可)
 
 python3 Controller --app hello run
+
+
+https://blog.csdn.net/huayunhualuo/article/details/100080092
