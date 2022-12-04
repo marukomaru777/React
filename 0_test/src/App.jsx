@@ -1,16 +1,21 @@
-import React from 'react';
+import React from 'react'
+//import {useEffect} from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import BTable from 'react-bootstrap/Table';
+import BButton from 'react-bootstrap/Button';
 import { useTable } from 'react-table';
 
-function Table(){
+function App() {
+  // Use the state and functions returned from useTable to build your UI
   const data = React.useMemo(
     () => [
       {
-        col1: 'Hello',
-        col2: 'World',
+        col1: '標的',
+        col2: '2330.TW',
       },
       {
-        col1: 'react-table',
-        col2: 'rocks',
+        col1: '起始時間',
+        col2: '2022-01-01',
       }
     ],[]
   );
@@ -18,20 +23,29 @@ function Table(){
   const columns = React.useMemo(
     () => [
       {
-        Header: 'Column 1',
+        Header: '表頭1',
         accessor: 'col1', // accessor is the "key" in the data
       },
       {
-        Header: 'Column 2',
+        Header: '表頭2',
         accessor: 'col2',
       }
     ],[]
   );
+
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = useTable({ columns, data });
+  // const tableInstance = useTable({ columns, data })  // Render the UI for your table
+  // const {
+  //   getTableProps,
+  //   getTableBodyProps,
+  //   headerGroups,
+  //   rows,
+  //   prepareRow,
+  // } = tableInstance
 
   return (
-    <table {...getTableProps()}>
-      <thead>
+    <BTable striped bordered hover size="sm" {...getTableProps()}>
+      {/* <thead>
         {headerGroups.map((headerGroup) => (
           <tr {...headerGroup.getHeaderGroupProps()}>
             {headerGroup.headers.map((column) => (
@@ -39,8 +53,9 @@ function Table(){
             ))}
           </tr>
         ))}
-      </thead>
-      <tbody {...getTableBodyProps()}>
+      </thead> */}
+      
+      <tbody {...getTableBodyProps()} >
         {rows.map((row) => {
           prepareRow(row);
           return (
@@ -52,8 +67,15 @@ function Table(){
           );
         })}
       </tbody>
-    </table>
-  );
+      <tfoot>
+        <tr>
+          <td colSpan='2' align='center'>
+            <BButton>查詢</BButton>
+          </td>
+        </tr>
+      </tfoot>
+    </BTable>
+  )
 }
 
-export default Table;
+export default App

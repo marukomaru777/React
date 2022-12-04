@@ -1,0 +1,11 @@
+/* Add CSS styles here! */
+body {
+  font-family: sans-serif;
+}
+
+#query {
+  width: 20%;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
